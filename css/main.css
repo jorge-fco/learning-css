@@ -1,0 +1,45 @@
+:root{
+	--body: #ffffff;
+	--primary: #4100f5;
+	--secundary: #ffcdd2;
+	--text: #222222;
+	--text-light: #555555;
+	--text-black: #000000;
+	--accent: #f8f8f8;
+	--divider: #dddddd;
+}
+
+body{
+	color: var(--text);
+	background-color: var(--body);
+}
+
+h1, h2, h3, h4, h5, h6{
+
+}
+
+a{
+
+}
+
+a:hover{
+	color: var(--secundary);
+}
+
+p{
+
+}
+
+strong{
+
+}
+
+span{
+
+}
+
+/*
+font-family: 'Source Serif Pro', serif;
+font-family: 'Source Code Pro', monospace;
+font-family: 'Source Sans Pro', sans-serif;
+*/
