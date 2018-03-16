@@ -1,0 +1,96 @@
+.title-before{
+	display: inline-block;
+	position: relative;
+}
+
+.title-before:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: rgba(12,242,143, 0.2);
+}
+
+.title-after{
+	display: inline-block;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.title-after:after{
+	content: '';
+	width: 100%;
+	height: 10px;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: rgba(12,242,143, 0.2);
+}
+
+.title-before-after{
+	display: inline-block;
+	position: relative;
+}
+
+.title-before-after:before{
+	content: '';
+	width: 100%;
+	height: 2px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: rgba(12,242,143, 0.2);
+}
+
+.title-before-after:after{
+	content: '';
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	background-color: rgba(12,242,143, 0.2);
+}
+
+.title-before-text{
+	position: relative;
+}
+
+.title-before-text:before{
+	content: ' : ) ';
+	top: 0;
+	left: 0;
+}
+
+.title-after-text{
+	position: relative;
+}
+
+.title-after-text:before{
+	content: ' User : ';
+	top: 0;
+	left: 0;
+}
+
+.button-before-circle{
+	position: relative;
+}
+
+.button-before-circle:before{
+	content: attr(data-num);
+	width: 20px;
+	height: 20px;
+	top: -60%;
+	right: -40%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgb(12,242,143);
+}
