@@ -6,6 +6,9 @@ Wiki
 
 ### Variables
 - root
+- Combinators
+- Comments
+- Nested
 
 ### Selectors
 - ID
