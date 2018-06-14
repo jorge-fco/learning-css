@@ -7,6 +7,10 @@ Wiki
 ### Variables
 - root
 
+### Selectors
+- ID
+- Class name
+
 ### Pseudo elementos
 - ::before
 - ::after
