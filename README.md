@@ -2,10 +2,12 @@
 
 Learning CSS
 
-Wiki []()
+Wiki
 
-* Variables
-* Pseudo elementos
+### Variables
+- root
+
+### Pseudo elementos
 - ::before
 - ::after
 - content: 'text';
