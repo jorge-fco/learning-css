@@ -1,0 +1,20 @@
+.attributes{
+	width: 100%;
+	position: relative;
+}
+
+.attributes__item{
+	width: 50%;
+	padding: 20px;
+	position: relative;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 6px rgba(0,0,0, 0.30);
+}
+
+.attributes__item__text{
+	color: black;
+}
+
+.attributes__item__text[data-type='text']{
+	color: gray;
+}
