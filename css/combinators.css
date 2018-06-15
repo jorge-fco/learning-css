@@ -1,0 +1,27 @@
+.combinator{
+	widows: 100%;
+	position: relative;
+	background-color: #efefef;
+}
+
+/* DESCENDANT */
+.combinator .child{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: left;
+}
+
+/* CHILD */
+.combinator .child > h4{
+	color: black;
+}
+
+/* ADJACENT SIBILING */
+.combinator .child > h4 + img{
+	border: 5px solid black;
+}
+
+/* GENERAL SIBLING */
+.combinator .child > h4 ~ p{
+	color: gray;
+}

@@ -10,6 +10,7 @@
 }
 
 body{
+	font-family: 'Lato', sans-serif;
 	color: var(--text);
 	font-size: 16px;
 	font-weight: 400;
@@ -17,33 +18,32 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 }
 
 h1{
-	font-size: 2em;
+	font-size: 3em;
 }
 
 h2{
-
+	font-size: 2.5em;
 }
 
 h3{
-
+	font-size: 2em;
 }
 
 h4{
-
+	font-size: 1.5em;
 }
 
 h5{
-
+	font-size: 1.2em;
 }
 
 h6{
-
+	font-size: 1em;
 }
 
 a{
@@ -64,4 +64,8 @@ strong{
 
 span{
 
+}
+
+button{
+	
 }
