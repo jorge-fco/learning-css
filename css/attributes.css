@@ -11,6 +11,15 @@
 	box-shadow: 0 1px 6px rgba(0,0,0, 0.30);
 }
 
+.attributes__item__image img[alt~=header]{
+	border: 5px solid black;
+}
+
+.attributes__item__image img[alt~=user]{
+	border-radius: 50%;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
 .attributes__item__text{
 	color: black;
 }

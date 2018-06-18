@@ -4,24 +4,39 @@
 	background-color: #efefef;
 }
 
-/* DESCENDANT */
+/*
+	Group of selectors
+*/
+.combinator, .items, .post{
+	width: 100%;
+}
+
+/*
+	Descendant selector
+*/
 .combinator .child{
 	padding-top: 25px;
 	padding-bottom: 25px;
 	text-align: left;
 }
 
-/* CHILD */
+/*
+	Child selector
+*/
 .combinator .child > h4{
 	color: black;
 }
 
-/* ADJACENT SIBILING */
+/*
+	Adjacent sibling selector
+ */
 .combinator .child > h4 + img{
 	border: 5px solid black;
 }
 
-/* GENERAL SIBLING */
+/*
+	General sibling selector
+*/
 .combinator .child > h4 ~ p{
 	color: gray;
 }
