@@ -14,8 +14,23 @@ Wiki
 - ID
 - Class name
 
-### Pseudo elementos
-- ::before
-- ::after
+### Attributes selectors
+- [attr]
+- [attr]
+- [attr]
+- [attr]
+- [attr]
+- [attr]
+- [attr]
+- [attr]
+
+
+### PseudoElementos
+- :before
+- :after
+- :hover
+- :focus
+- :visited
+- :not
 - content: 'text';
 - content: attr(data-name);
