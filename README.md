@@ -32,5 +32,6 @@ Wiki
 - :focus
 - :visited
 - :not
+- :disabled
 - content: 'text';
 - content: attr(data-name);
