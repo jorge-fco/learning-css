@@ -16,13 +16,13 @@ Wiki
 
 ### Attributes selectors
 - [attr]
-- [attr]
-- [attr]
-- [attr]
-- [attr]
-- [attr]
-- [attr]
-- [attr]
+- [attr=value]
+- [attr~=value]
+- [attr|=value]
+- [attr^=value]
+- [attr$=value]
+- [attr*=value]
+- [attr operator value i]
 
 
 ### PseudoElementos
