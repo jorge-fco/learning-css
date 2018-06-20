@@ -88,9 +88,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
+	color: white;
 	font-size: 10px;
 	text-align: center;
 	border-radius: 50%;
 	background-color: rgb(12,242,143);
+}
+
+.button-link{
+
+}
+
+.button-link:hover{
+
+}
+
+.button-link:active{
+
 }
