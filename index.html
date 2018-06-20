@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!--TITLE-->
 	<title>Learning CSS</title>
@@ -10,65 +11,84 @@
 	<!--F O N T S-->
 
 	<!--C S S-->
+	<link rel="stylesheet" href="css/typography.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/framework.css">
 	<link rel="stylesheet" href="css/attributes.css">
 	<link rel="stylesheet" href="css/combinators.css">
 	<link rel="stylesheet" href="css/pseudo.elements.css">
 </head>
+
 <body>
-	<header>
-		<h1>Hello</h1>
+	<header class="header">
+		<div class="container">
+			<h1>CSS</h1>
+		</div>
 	</header>
 
-<main>
-	<section>
-		<h2>Pseudo elements</h2>
-		<h4 class="title-before">Title-before</h4>
-		<h4 class="title-after">Title-after</h4>
-		<h4 class="title-before-after">Title before & after</h4>
-		<h4 class="title-before-text">Hello</h4>
-		<h4 class="title-after-text">George</h4>
-		<button type="button" class="button-before-circle" data-num="7">
-			Cart
-		</button>
-	</section>
+	<main class="container">
+		<section>
+			<h2>1.1 Basic elemnts</h2>
+			<ul>
+				<li>Elements</li>
+				<li>Class name</li>
+				<li>ID's</li>
+				<li>Nesting</li>
+			</ul>
+		</section>
 
-	<section>
-		<h2>Combinators</h2>
-		<div class="combinator">
-			<div class="child">
-				<h4>Text</h4>
-				<img src="images/item.jpg" alt="Site">
-				<p>Text 1</p>
-				<p>Text 2</p>
-			</div>
-		</div>
-	</section>
+		<section>
+			<h2>1.2 Variables</h2>
+		</section>
 
-	<section>
-		<h2>Attributes</h2>
-		<div class="attributes">
-			<div class="attributes__item">
-				<div class="attributes__item__image">
-					<img src="images/cover.png" alt="header cover">
-				</div>
-				<div class="attributes__item__image">
-					<img src="images/thumb.png" alt="user">
-				</div>
-				<div class="attributes__item__text">
-					<h3>Title</h3>
-				</div>
-				<div class="attributes__item__text" data-type="text">
-					<p>Texto used attr</p>
+		<section>
+			<h2>Pseudo elements</h2>
+			<h4 class="title-before">Title-before</h4>
+			<h4 class="title-after">Title-after</h4>
+			<h4 class="title-before-after">Title before & after</h4>
+			<h4 class="title-before-text">Hello</h4>
+			<h4 class="title-after-text">George</h4>
+			<button type="button" class="button-before-circle" data-num="7">
+				Cart
+			</button>
+		</section>
+
+		<section>
+			<h2>Combinators</h2>
+			<div class="combinator">
+				<div class="child">
+					<h4>Text</h4>
+					<img src="images/item.jpg" alt="Site">
+					<p>Text 1</p>
+					<p>Text 2</p>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section>
-		<h2></h2>
-	</section>
-</main>
+		<section>
+			<h2>Attributes</h2>
+			<div class="attributes">
+				<div class="attributes__item">
+					<div class="attributes__item__image">
+						<img src="images/cover.png" alt="header cover">
+					</div>
+					<div class="attributes__item__image">
+						<img src="images/thumb.png" alt="user">
+					</div>
+					<div class="attributes__item__text">
+						<h3>Title</h3>
+					</div>
+					<div class="attributes__item__text" data-type="text">
+						<p>Texto used attr</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2></h2>
+		</section>
+	</main>
 
 	<footer>
 		
