@@ -1,5 +1,5 @@
 :root{
-	--body: #eeeeee;
+	--body: #ffffff;
 	--primary: #4100f5;
 	--secundary: #ffcdd2;
      --text: #222222;
@@ -8,8 +8,8 @@
 	--accent: #f8f8f8;
 	--divider: #dddddd;
 
-	--font-title: ;
-	--font-text: ;
+	--font-text: 'Karla', sans-serif;
+	--font-title: 'Playfair Display', serif;
 }
 
 html{
@@ -18,14 +18,15 @@ html{
 
 body{
 	margin: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: var(--font-text);
 	color: var(--text);
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	background-color: var(--body);
 }
 
 h1, h2, h3, h4, h5, h6{
+	font-family: var(--font-title);
 	font-style: normal;
 	font-weight: 700;
 	margin-bottom: 25px;
