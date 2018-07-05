@@ -17,22 +17,27 @@
 
 }
 
+.item{
+	width: 100%;
+	position: relative;
+}
+
 .grid-layout{
 	/* 75.34% */
 }
 
+/*!
+	::: CSS GRID BASIC :::
+	* Requerid.
+	display: grid;
 
+	* Syntax normaly.
+	grid-template-columns: 1fr 1fr 1fr;
+
+	* Syntax short.
+	grid-template-columns: repeat(3, 1fr);
+*/
 .grid-basic{
-	/*
-		-Requerid.
-		display: grid;
-
-		-Syntax normaly.
-		grid-template-columns: 1fr 1fr 1fr;
-
-		-Syntax short.
-		grid-template-columns: repeat(3, 1fr);
-	*/
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
@@ -50,10 +55,20 @@
 	text-align: center;
 	width: 100%;
 	height: 20vh;
-	background-color: var(--color-blue-1);
+	background-color: var(--color-blue-2);
 }
 
-.item{
+/*!
+
+*/
+.grid-template{
+	display: grid;
+	grid-template-columns: 1fr 3fr 2fr;
+}
+
+.grid-template > div{
 	width: 100%;
+	height: 60vh;
 	position: relative;
+	background-color: var(--color-blue-2);
 }
