@@ -1,8 +1,13 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap-reboot';
+@import '../node_modules/bootstrap/dist/css/bootstrap-grid';
+
 :root{
 	--color-blue-1: #F1F9FF;
 	--color-blue-2: #BCE0FD;
 	--color-blue-3: #7FC4FD;
 	--color-blue-4: #2699FB;
+
+	--color-elements: #000;
 }
 
 .row{
@@ -42,6 +47,13 @@
 	grid-template-columns: repeat(3, 1fr);
 }
 
+/* Mobile */
+@media(max-width: 780px){
+	.grid-basic{
+		grid-template-columns: 1fr;
+	}
+}
+
 .grid-basic > div{
 	align-self: center;
 	justify-self: center;
@@ -64,6 +76,15 @@
 .grid-template{
 	display: grid;
 	grid-template-columns: 1fr 3fr 2fr;
+}
+
+/*
+	Mobile
+*/
+@media(max-width: 780px){
+	.grid-template{
+		grid-template-columns: 1fr;
+	}
 }
 
 .grid-template > div{
@@ -105,6 +126,15 @@
 	grid-template-areas: "sidebar content content";
 }
 
+/*
+	Mobile
+*/
+@media(max-width: 780px){
+	.grid-area{
+		grid-template-areas: "sidebar" "content";
+	}
+}
+
 .grid-area-sidebar{
 	grid-area: sidebar;
 	width: 100%;
@@ -130,9 +160,30 @@
 	grid-gap: 2em;
 }
 
+/*
+	Mobile
+*/
+@media(max-width: 780px){
+	.grid-gap{
+		grid-template-columns: 1fr;
+	}
+}
+
 .grid-gap > div{
 	width: 100%;
 	height: 20vh;
 	position: relative;
 	background-color: var(--color-blue-2);
+}
+
+.header{
+	
+}
+
+.footer{
+	width: 100%;
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: var(--color-elements);
 }
