@@ -19,7 +19,7 @@
 }
 
 .gutters{
-
+	grid-gap: 3%;
 }
 
 .item{
@@ -91,7 +91,7 @@
 	width: 100%;
 	position: relative;
 	padding: 2em 2em;
-	background-color: var(--color-blue-2);
+	background-color: var(--color-blue-1);
 }
 
 .grid-template > div > ul{
@@ -101,6 +101,8 @@
 }
 
 .grid-template > div > ul li{
+	cursor: pointer;
+	color: var(--color-blue-4);
 	position: relative;
 	margin-bottom: 10px;
 }
@@ -108,14 +110,15 @@
 .grid-template > div > video{
 	width: 100%;
 	height: 50vh;
-	background-color: black;
+	background-color: var(--color-blue-3);
 }
 
 .grid-template > div > article{
 	width: 100%;
 	height: 20vh;
-	margin-bottom: 3%;
-	background-color: black;
+	border-radius: 3px;
+	margin-bottom: 3.33333%;
+	background-color: var(--color-blue-2);
 }
 
 /*!
@@ -137,6 +140,11 @@
 
 .grid-area-sidebar{
 	grid-area: sidebar;
+
+	color: var(--color-blue-4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 30vh;
 	position: relative;
@@ -145,6 +153,11 @@
 
 .grid-area-container{
 	grid-area: content;
+
+	color: var(--color-blue-4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 30vh;
 	position: relative;
@@ -157,7 +170,7 @@
 .grid-gap{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 2em;
+	grid-gap: 2%;
 }
 
 /*
