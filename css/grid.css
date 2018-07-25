@@ -1,13 +1,30 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap-reboot';
-@import '../node_modules/bootstrap/dist/css/bootstrap-grid';
+@import 	'../node_modules/bootstrap/dist/css/bootstrap-reboot';
+@import 	'../node_modules/bootstrap/dist/css/bootstrap-grid';
 
 :root{
+	--color-primary: #e5ff30;
+	--color-secundary:	#54ffb2;
+
 	--color-blue-1: #F1F9FF;
 	--color-blue-2: #BCE0FD;
 	--color-blue-3: #7FC4FD;
 	--color-blue-4: #2699FB;
 
-	--color-elements: #000;
+	--color-title:		#202124;
+	--color--text:	#5f6368;
+
+	--color-elements: #202124;
+
+	--item-border-radius: 0.3em;
+	--grid-gap: 2em;
+}
+
+body{
+	color: var(--color-text);
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: var(--color-title);
 }
 
 .row{
@@ -19,7 +36,7 @@
 }
 
 .gutters{
-	grid-gap: 3%;
+
 }
 
 .item{
@@ -28,6 +45,7 @@
 }
 
 .grid-layout{
+	display: grid;
 	/* 75.34% */
 }
 
@@ -42,12 +60,21 @@
 	* Syntax short.
 	grid-template-columns: repeat(3, 1fr);
 */
+
+.grid-column-gap{
+	grid-column-gap: var(--grid-gap);
+}
+
+.grid-row-gap{
+	grid-row-gap: var(--grid-gap);
+}
+
 .grid-basic{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
 
-/* Mobile */
+/*= Mobile */
 @media(max-width: 780px){
 	.grid-basic{
 		grid-template-columns: 1fr;
@@ -71,16 +98,14 @@
 }
 
 /*!
-	Grid template
+	GRID TEMPLATE
 */
 .grid-template{
 	display: grid;
 	grid-template-columns: 1fr 3fr 2fr;
 }
 
-/*
-	Mobile
-*/
+/*= Mobile*/
 @media(max-width: 780px){
 	.grid-template{
 		grid-template-columns: 1fr;
@@ -114,24 +139,26 @@
 }
 
 .grid-template > div > article{
+	color: var(--color-blue-4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 20vh;
-	border-radius: 3px;
-	margin-bottom: 3.33333%;
+	border-radius: var(--item-border-radius);
+	margin-bottom: 2em;
 	background-color: var(--color-blue-2);
 }
 
 /*!
-	Grid area
+	GRID AREA
 */
 .grid-area{
 	display: grid;
 	grid-template-areas: "sidebar content content";
 }
 
-/*
-	Mobile
-*/
+/*= Mobile*/
 @media(max-width: 780px){
 	.grid-area{
 		grid-template-areas: "sidebar" "content";
@@ -140,7 +167,7 @@
 
 .grid-area-sidebar{
 	grid-area: sidebar;
-
+	/*Style*/
 	color: var(--color-blue-4);
 	display: flex;
 	align-items: center;
@@ -153,7 +180,7 @@
 
 .grid-area-container{
 	grid-area: content;
-
+	/*Style*/
 	color: var(--color-blue-4);
 	display: flex;
 	align-items: center;
@@ -164,8 +191,37 @@
 	background-color: var(--color-blue-1);
 }
 
-/*
-	Grid gap
+.grid-area-page{
+	display: grid;
+	grid-template-areas: "header header header" "navigation content content";
+}
+
+.grid-area-header{
+	grid-area: header;
+	/*Style*/
+	color: var(--color-blue-4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 20vh;
+	background-color: var(--color-blue-2);
+}
+
+.grid-area-navigation{
+	grid-area: navigation;
+	/*Style*/
+	color: var(--color-blue-4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 30vh;
+	background-color: var(--color-blue-3);
+}
+
+/*!
+	GRID GAP
 */
 .grid-gap{
 	display: grid;
@@ -173,9 +229,7 @@
 	grid-gap: 2%;
 }
 
-/*
-	Mobile
-*/
+/*= Mobile*/
 @media(max-width: 780px){
 	.grid-gap{
 		grid-template-columns: 1fr;
@@ -190,7 +244,10 @@
 }
 
 .header{
-
+	width: 100%;
+	position: relative;
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 .main{
